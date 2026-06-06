@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Culture & Food | Spain Tourism Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" aria-label="Loading" role="status">
+    <div class="loader__card">
+      <div class="loader__logo" aria-hidden="true">🇪🇸</div>
+      <div class="loader__text">Exploring culture &amp; cuisine…</div>
+      <div class="loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="page-fade" id="pageFade" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Spain Tourism Board">
+        <span class="brand__mark" aria-hidden="true">✦</span>
+        <span class="brand__text">Spain Tourism Board</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="index.html" class="nav__link" data-nav>Home</a>
+        <a href="destinations.html" class="nav__link" data-nav>Destinations</a>
+        <a href="culture.html" class="nav__link is-active" data-nav>Culture &amp; Food</a>
+        <a href="index.html#contact" class="nav__link" data-scroll>Contact</a>
+
+        <div class="nav__extras">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--culture" id="top">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="container page-hero__content">
+        <div class="hero__copy" style="max-width: 780px;">
+          <div class="kicker reveal">Culture &amp; Food</div>
+          <h1 class="hero__title reveal" data-split="Feel Spain’s heartbeat">Feel Spain’s heartbeat</h1>
+          <p class="hero__lead reveal">Festivals, dance, and iconic flavors—get the vibe before you even arrive.</p>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="#gallery" data-scroll>View Gallery</a>
+            <a class="btn btn--glass" href="destinations.html" data-page>Pick a City</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="culture">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Highlights</h2>
+          <p class="section-text">Scroll for sections with smooth reveal animations.</p>
+        </div>
+
+        <div class="culture-grid">
+          <article class="feature card reveal">
+            <div class="feature__icon" aria-hidden="true">💃</div>
+            <h3 class="feature__title">Flamenco dance</h3>
+            <p class="feature__text">A powerful mix of rhythm, guitar, and emotion—watch hands, stomps, and intensity.</p>
+            <div class="funfact">Pro tip: Look for shows in <strong>Seville</strong> and <strong>Granada</strong> for classic vibes.</div>
+          </article>
+
+          <article class="feature card reveal">
+            <div class="feature__icon" aria-hidden="true">🍅</div>
+            <h3 class="feature__title">La Tomatina festival</h3>
+            <p class="feature__text">Yes—tomatoes everywhere. It’s chaotic, hilarious, and surprisingly organized.</p>
+            <div class="funfact">Fun fact: It happens in <strong>Buñol</strong> and is one of Spain’s most famous food festivals.</div>
+          </article>
+
+          <article class="feature card reveal">
+            <div class="feature__icon" aria-hidden="true">🍢</div>
+            <h3 class="feature__title">Tapas</h3>
+            <p class="feature__text">Small plates made for sharing—perfect for students who want to try everything.</p>
+            <div class="funfact">Student move: Order 2–3 tapas per person and share like a group project.</div>
+          </article>
+
+          <article class="feature card reveal">
+            <div class="feature__icon" aria-hidden="true">🍤</div>
+            <h3 class="feature__title">Paella</h3>
+            <p class="feature__text">Golden rice, rich flavors, and a dish that turns dinner into a moment.</p>
+            <div class="funfact">Fun fact: Traditional paella comes from the <strong>Valencia</strong> region.</div>
+          </article>
+
+          <article class="feature card reveal">
+            <div class="feature__icon" aria-hidden="true">🍩</div>
+            <h3 class="feature__title">Churros</h3>
+            <p class="feature__text">Crispy, cinnamon-sweet, and best dipped into thick chocolate.</p>
+            <div class="funfact">Late-night truth: Churros + chocolate is basically dessert culture.</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--gallery" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Gallery (hover to zoom)</h2>
+          <p class="section-text">Cinematic imagery with smooth hover scaling—built for desktop and mobile.</p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gitem reveal">
+            <img src="c:\Users\U S E R - P C\Downloads\flamenco dance.jpeg" alt="Flamenco performance" loading="lazy">
+            <figcaption>Flamenco energy</figcaption>
+          </figure>
+          <figure class="gitem reveal">
+            <img src="c:\Users\U S E R - P C\Downloads\tomato festival.jpg" alt="La Tomatina festival" loading="lazy">
+            <figcaption>La Tomatina chaos</figcaption>
+          </figure>
+          <figure class="gitem reveal">
+            <img src="c:\Users\U S E R - P C\Downloads\tapas.jpg" alt="Tapas on a table" loading="lazy">
+            <figcaption>Tapas crawl</figcaption>
+          </figure>
+          <figure class="gitem reveal">
+            <img src="c:\Users\U S E R - P C\Downloads\paella.jpg" alt="Paella dish" loading="lazy">
+            <figcaption>Paella golden hour</fign          </figure>
+          <figure class="gitem reveal">
+            <img src="c:\Users\U S E R - P C\Downloads\churros.jpg" alt="Churros with chocolate" loading="lazy">
+            <figcaption>Churros + chocolate</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="reveal">
+            <h3 class="section-title">Contact</h3>
+            <p class="section-text">Ask for student itineraries or festival timing tips.</p>
+            <div class="contact-chip"><span aria-hidden="true">✉️</span> alfredcallo256@gmail.com</div>
+            <div class="contact-chip"><span aria-hidden="true">📍</span> Madrid, Spain</div>
+          </div>
+          <form class="contact-form card reveal" autocomplete="off">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="alfredcallo256@gmail.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="Tell us your travel vibe" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Spain Tourism Board</div>
+      <div>Develop by <strong>Alfred Callo</strong></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

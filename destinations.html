@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Destinations | Spain Tourism Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="loader" aria-label="Loading" role="status">
+    <div class="loader__card">
+      <div class="loader__logo" aria-hidden="true">🇪🇸</div>
+      <div class="loader__text">Loading destinations…</div>
+      <div class="loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="page-fade" id="pageFade" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Spain Tourism Board">
+        <span class="brand__mark" aria-hidden="true">✦</span>
+        <span class="brand__text">Spain Tourism Board</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="index.html" class="nav__link" data-nav>Home</a>
+        <a href="destinations.html" class="nav__link is-active" data-nav>Destinations</a>
+        <a href="culture.html" class="nav__link" data-nav>Culture &amp; Food</a>
+        <a href="index.html#contact" class="nav__link" data-scroll>Contact</a>
+
+        <div class="nav__extras">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero" id="top">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="container page-hero__content">
+        <div class="hero__copy" style="max-width: 780px;">
+          <div class="kicker reveal">Top destinations</div>
+          <h1 class="hero__title reveal" data-split="Pick your vibe in Spain">Pick your vibe in Spain</h1>
+          <p class="hero__lead reveal">Swipe-worthy cities, golden-hour streets, and student-friendly adventures. Choose a destination and start planning.</p>
+
+          <div class="planner" id="planner">
+            <div class="planner__card card reveal">
+              <h2 class="section-title" style="margin:0;">Plan your mini-itinerary</h2>
+              <p class="section-text" style="margin-bottom: 14px;">Hit a button to autofill a suggested route length.</p>
+              <div class="planner__row">
+                <button class="btn btn--glass btn--sm" type="button" data-plan="3">3 days</button>
+                <button class="btn btn--glass btn--sm" type="button" data-plan="5">5 days</button>
+                <button class="btn btn--glass btn--sm" type="button" data-plan="7">7 days</button>
+              </div>
+              <div class="planner__result" aria-live="polite">Suggested route: <strong>5 days</strong> 🌟</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="destinations">
+      <div class="container">
+        <div class="section-head">
+          <h2 class="section-title">Choose your top 5</h2>
+          <p class="section-text">Hover for highlights. Tap on mobile to see descriptions.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Barcelona -->
+          <article class="dest-card reveal" tabindex="0" data-dest="Barcelona">
+            <div class="dest-card__media">
+              <img src="c:\Users\U S E R - P C\Downloads\barcelona.jpg" alt="Barcelona skyline" loading="lazy">
+              <div class="dest-card__overlay" aria-hidden="true"></div>
+              <div class="dest-card__badge">Barcelona</div>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Barcelona</h3>
+              <p class="dest-card__desc">Gaudí architecture, beach walks, and nightlife that starts late (like, very late).</p>
+              <div class="funfact">Fun fact: <strong>La Sagrada Família</strong> is still under construction—so you can witness history.</div>
+            </div>
+          </article>
+
+          <!-- Madrid -->
+          <article class="dest-card reveal" tabindex="0" data-dest="Madrid">
+            <div class="dest-card__media">
+              <img src="c:\Users\U S E R - P C\Downloads\MADRID.jpg" alt="Madrid streets" loading="lazy">
+              <div class="dest-card__overlay" aria-hidden="true"></div>
+              <div class="dest-card__badge">Madrid</div>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Madrid</h3>
+              <p class="dest-card__desc">Museums by day, tapas by night, and energy that keeps you moving.</p>
+              <div class="funfact">Fun fact: <strong>Mercado de San Miguel</strong> is a “snack museum” for food lovers.</div>
+            </div>
+          </article>
+
+          <!-- Seville -->
+          <article class="dest-card reveal" tabindex="0" data-dest="Seville">
+            <div class="dest-card__media">
+              <img src="c:\Users\U S E R - P C\Downloads\saville.jpg" alt="Seville golden hour" loading="lazy">
+              <div class="dest-card__overlay" aria-hidden="true"></div>
+              <div class="dest-card__badge">Seville</div>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Seville</h3>
+              <p class="dest-card__desc">Historic charm, orange-tree courtyards, and flamenco nights that hit different.</p>
+              <div class="funfact">Fun fact: <strong>Plaza de España</strong> looks like it belongs in a movie.</div>
+            </div>
+          </article>
+
+          <!-- Granada -->
+          <article class="dest-card reveal" tabindex="0" data-dest="Granada">
+            <div class="dest-card__media">
+              <img src="c:\Users\U S E R - P C\Downloads\granda.jpg" alt="Granada Alhambra" loading="lazy">
+              <div class="dest-card__overlay" aria-hidden="true"></div>
+              <div class="dest-card__badge">Granada</div>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Granada</h3>
+              <p class="dest-card__desc">Alhambra magic, sunset viewpoints, and Moorish-inspired streets.</p>
+              <div class="funfact">Fun fact: The <strong>Alhambra</strong> is one of Spain’s most iconic UNESCO sites.</div>
+            </div>
+          </article>
+
+          <!-- Ibiza -->
+          <article class="dest-card reveal" tabindex="0" data-dest="Ibiza">
+            <div class="dest-card__media">
+              <img src="c:\Users\U S E R - P C\Downloads\ibaza.jpg" alt="Ibiza beach" loading="lazy">
+              <div class="dest-card__overlay" aria-hidden="true"></div>
+              <div class="dest-card__badge">Ibiza</div>
+            </div>
+            <div class="dest-card__body">
+              <h3 class="dest-card__title">Ibiza</h3>
+              <p class="dest-card__desc">Clubs, coves, and golden sunsets—plus lots of chill daytime exploring.</p>
+              <div class="funfact">Fun fact: Ibiza is famous worldwide for its <strong>music and beach sunsets</strong>.</div>
+            </div>
+          </article>
+        </div>
+
+        <div class="callout card reveal">
+          <div>
+            <h3 class="section-title" style="margin:0;">Student-friendly tip</h3>
+            <p class="section-text" style="margin: 10px 0 0;">
+              Book tickets early for the big sights, then spend the rest of your day wandering—Spain rewards explorers.
+            </p>
+          </div>
+          <a class="btn btn--primary" href="culture.html" data-page>Culture &amp; Food →</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Spain Tourism Board</div>
+      <div>Develop by <strong>Alfred Callo</strong></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

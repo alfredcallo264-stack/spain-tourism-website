@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spain Tourism Board</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loader" aria-label="Loading" role="status">
+    <div class="loader__card">
+      <div class="loader__logo" aria-hidden="true">🇪🇸</div>
+      <div class="loader__text">Preparing your journey…</div>
+      <div class="loader__bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-fade" id="pageFade" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Spain Tourism Board">
+        <span class="brand__mark" aria-hidden="true">✦</span>
+        <span class="brand__text">Spain Tourism Board</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav" id="siteNav">
+        <a href="index.html" class="nav__link is-active" data-nav>Home</a>
+        <a href="destinations.html" class="nav__link" data-nav>Destinations</a>
+        <a href="culture.html" class="nav__link" data-nav>Culture &amp; Food</a>
+        <a href="#contact" class="nav__link" data-scroll>Contact</a>
+
+        <div class="nav__extras">
+          <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">🌙</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero" id="top">
+      <div class="hero__bg" data-parallax="0.25" aria-hidden="true"></div>
+      <div class="container hero__content">
+        <div class="hero__copy">
+          <div class="kicker reveal">Welcome to Spain</div>
+          <h1 class="hero__title reveal" data-split="Discover the Beauty of Spain">
+            Discover the Beauty of Spain
+          </h1>
+          <p class="hero__lead reveal">
+            From sunlit plazas to legendary cuisine, Spain invites you to travel with imagination—one unforgettable day at a time.
+          </p>
+
+          <div class="hero__actions reveal">
+            <a class="btn btn--primary" href="destinations.html" data-page>
+              Explore Destinations
+            </a>
+            <a class="btn btn--glass" href="destinations.html#planner" data-page>
+              Plan Your Trip
+            </a>
+          </div>
+
+          <div class="hero__stats reveal" role="list">
+            <div class="stat" role="listitem">
+              <div class="stat__num">21+</div>
+              <div class="stat__label">Regions of wonder</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__num">4</div>
+              <div class="stat__label">Top cities to start</div>
+            </div>
+            <div class="stat" role="listitem">
+              <div class="stat__num">∞</div>
+              <div class="stat__label">Moments worth posting</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card reveal" aria-label="Travel snapshot">
+          <div class="hero__card-top">
+            <div class="pill">Today’s vibe</div>
+            <div class="temp">Cinematic &amp; sunny</div>
+          </div>
+          <ul class="mini-list">
+            <li><span class="dot"></span> Walk through historic streets</li>
+            <li><span class="dot"></span> Taste tapas &amp; paella</li>
+            <li><span class="dot"></span> Catch festivals at full volume</li>
+          </ul>
+          <div class="hero__card-bottom">
+            <a class="link" href="culture.html" data-page>
+              See festivals &amp; flavors →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <i></i>
+      </div>
+    </section>
+
+    <!-- Intro -->
+    <section class="section section--intro">
+      <div class="container">
+        <div class="grid grid--2">
+          <div class="card reveal">
+            <h2 class="section-title">Discover the Beauty of Spain</h2>
+            <p class="section-text">
+              Spain is a mosaic of cultures—each city has its own rhythm, architecture, and unforgettable flavors.
+              Whether you’re chasing coastal sunsets or mountain views, your next favorite memory is waiting.
+            </p>
+            <div class="bullets">
+              <div class="bullet"><span aria-hidden="true">⚡</span> Fast-paced city energy</div>
+              <div class="bullet"><span aria-hidden="true">🌊</span> Coastal escapes &amp; beaches</div>
+              <div class="bullet"><span aria-hidden="true">🎭</span> Art, dance &amp; festivals</div>
+            </div>
+          </div>
+
+          <div class="card card--gradient reveal">
+            <h3 class="card__title">Quick Travel Hack</h3>
+            <p class="section-text">
+              Start with <strong>Barcelona</strong>, then hop to <strong>Madrid</strong> for museum magic,
+              finish with <strong>Seville</strong> for flamenco nights.
+            </p>
+            <div class="quote">
+              <span class="quote__mark" aria-hidden="true">“</span>
+              <span class="quote__text">The best itinerary is the one that makes you want to stay one day longer.</span>
+              <span class="quote__mark" aria-hidden="true">”</span>
+            </div>
+            <div class="actions-row">
+              <a class="btn btn--primary btn--sm" href="destinations.html#top" data-page>Jump to Destinations</a>
+              <a class="btn btn--glass btn--sm" href="culture.html" data-page>Culture &amp; Food</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact anchor -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="reveal">
+            <h3 class="section-title">Contact</h3>
+            <p class="section-text">Want student-friendly travel tips? We’ve got you.</p>
+            <div class="contact-chip"><span aria-hidden="true">✉️</span> alfredcallo256@gmail.com</div>
+            <div class="contact-chip"><span aria-hidden="true">📍</span> Madrid, Spain</div>
+          </div>
+          <form class="contact-form card reveal" autocomplete="off">
+            <label>
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="4" placeholder="Tell us your travel vibe" required></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> Spain Tourism Board</div>
+      <div>Develop by <strong>Alfred Callo</strong></div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
